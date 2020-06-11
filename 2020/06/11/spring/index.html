@@ -488,11 +488,11 @@
 <p>而AOP技术则恰恰相反，它利用一种称为“横切”的技术，剖解开封装的对象内部，并将那些影响了多个类的公共行为封装到一个可重用模块，并将其名为“Aspect”，即方面。所谓“方面”，简单地说，就是将那些与业务无关，却为业务模块所共同调用的逻辑或责任封装起来，便于减少系统的重复代码，降低模块间的耦合度，并有利于未来的可操作性和可维护性。</p>
 <p>使用“横切”技术，AOP把软件系统分为两个部分：核心关注点和横切关注点。业务处理的主要流程是核心关注点，与之关系不大的部分是横切关注点。</p>
 <p>横切关注点的一个特点是，他们经常发生在核心关注点的多处，而各处都基本相似。比如权限认证、日志、事务处理。Aop 的作用在于分离系统中的各种关注点，将核心关注点和横切关注点分离开来。正如Avanade公司的高级方案构架师Adam Magee所说，AOP的核心思想就是“将应用程序中的商业逻辑同对其提供支持的通用服务进行分离。”</p>
-<p>####IOC是什么<br>IOC是Inversion of Control的缩写，多数书籍翻译成“控制反转”。控制反转是依赖倒置原则的一种<strong>代码设计思想</strong>。具体采用的方法就是所谓的依赖注入（DI）</p>
+<h3 id="2-IOC是什么"><a href="#2-IOC是什么" class="headerlink" title="2. IOC是什么"></a>2. IOC是什么</h3><p>IOC是Inversion of Control的缩写，多数书籍翻译成“控制反转”。控制反转是依赖倒置原则的一种<strong>代码设计思想</strong>。具体采用的方法就是所谓的依赖注入（DI）</p>
 <p>在Java开发中，Ioc意味着将你设计好的对象交给容器控制，而不是传统的在你的对象内部直接控制。</p>
 <p>传统应用程序都是由我们在类内部主动创建依赖对象，从而导致类与类之间高耦合，难于测试；有了IoC容器后，把创建和查找依赖对象的控制权交给了容器，由容器进行注入组合对象，所以对象与对象之间是松散耦合，这样也方便测试，利于功能复用，更重要的是使得程序的整个体系结构变得非常灵活。</p>
 <p>IoC很好的体现了面向对象设计法则之一—— 好莱坞法则：“别找我们，我们找你”；即由IoC容器帮对象找相应的依赖对象并注入，而不是由对象主动去找。</p>
-<p>#####DI和IOC的关系<br>DI—Dependency Injection，即“依赖注入”：是组件之间依赖关系由容器在运行期决定，形象的说，即由容器动态的将某个依赖关系注入到组件之中。依赖注入的目的并非为软件系统带来更多功能，而是为了提升组件重用的频率，并为系统搭建一个灵活、可扩展的平台。通过依赖注入机制，我们只需要通过简单的配置，而无需任何代码就可指定目标需要的资源，完成自身的业务逻辑，而不需要关心具体的资源来自何处，由谁实现。</p>
+<h3 id="3-DI和IOC的关系"><a href="#3-DI和IOC的关系" class="headerlink" title="3. DI和IOC的关系"></a>3. DI和IOC的关系</h3><p>DI—Dependency Injection，即“依赖注入”：是组件之间依赖关系由容器在运行期决定，形象的说，即由容器动态的将某个依赖关系注入到组件之中。依赖注入的目的并非为软件系统带来更多功能，而是为了提升组件重用的频率，并为系统搭建一个灵活、可扩展的平台。通过依赖注入机制，我们只需要通过简单的配置，而无需任何代码就可指定目标需要的资源，完成自身的业务逻辑，而不需要关心具体的资源来自何处，由谁实现。</p>
 <p>理解DI的关键是：“谁依赖谁，为什么需要依赖，谁注入谁，注入了什么”，那我们来深入分析一下：</p>
 <ol>
 <li>谁依赖于谁：当然是应用程序依赖于IoC容器；</li>
@@ -507,7 +507,7 @@
 <li>setter注入</li>
 <li>基于注解的注入</li>
 </ol>
-<h3 id="Spring的模块"><a href="#Spring的模块" class="headerlink" title="Spring的模块"></a>Spring的模块</h3><p>Spring框架至今已集成了20多个模块。这些模块主要被分如下图所示的核心容器、数据访问/集成,、Web、AOP（面向切面编程）、工具、消息和测试模块。</p>
+<h3 id="4-Spring的模块"><a href="#4-Spring的模块" class="headerlink" title="4. Spring的模块"></a>4. Spring的模块</h3><p>Spring框架至今已集成了20多个模块。这些模块主要被分如下图所示的核心容器、数据访问/集成,、Web、AOP（面向切面编程）、工具、消息和测试模块。</p>
 <p><img src="https://imgconvert.csdnimg.cn/aHR0cHM6Ly9tbWJpei5xcGljLmNuL21tYml6X3BuZy9RQ3U4NDlZVGFJTzZqaWI4WFAzcjhoOHNpYjA4MGljaWJIdnV0ZlFKWUNIV0pqQ0VTOWlickZiVzAydXRtQks0bUNsRUNEOWRGV0ppYUtQUDdtUkdqaWJJdVh3YmcvNjQw?x-oss-process=image/format,png" alt="enter image description here"></p>
 <p>####spring 事务实现方式有哪些？</p>
 <ol>
@@ -748,53 +748,51 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="far fa-dot-circle"></i>&nbsp;本篇
-            </div>
+                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2020/06/11/spring/">
+                <a href="/2020/06/11/springmvc/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="Spring简介">
+                        <img src="/medias/featureimages/11.jpg" class="responsive-img" alt="SpringMVC运行流程">
                         
-                        <span class="card-title">Spring简介</span>
+                        <span class="card-title">SpringMVC运行流程</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            1. Spring的特点
-轻量级
-控制反转（IOC)
-面向切面 (AOP)
-容器
-简单来说，Spring是一个轻量级得到控制反转和面向切面的容器框架至于IOC和AOP则是Spring的灵魂，这两点搞清楚，Spring就很容易理解了，下面我就
+                            1. SpringMVC的运行流程 
+
+用户向服务器发送请求，请求被Spring 前端控制Servelt DispatcherServlet捕获；
+
+
+DispatcherServlet对请求URL进行解析，得到请求资源标识符（URI）。然
                         
                     </div>
                     <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-06-11
-                            </span>
+                        <span class="publish-date">
+                            <i class="far fa-clock fa-fw icon-date"></i>2020-06-11
+                        </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/Spring/" class="post-category">
-                                    Spring
+                            <a href="/categories/SpringMVC/" class="post-category">
+                                    SpringMVC
                                 </a>
                             
                             
                         </span>
                     </div>
                 </div>
-
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/Spring/">
-                        <span class="chip bg-color">Spring</span>
+                    <a href="/tags/SpringMVC/">
+                        <span class="chip bg-color">SpringMVC</span>
                     </a>
                     
                 </div>
@@ -812,9 +810,9 @@
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/18.jpg" class="responsive-img" alt="FirstBlog">
+                        <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="Spring简介">
                         
-                        <span class="card-title">FirstBlog</span>
+                        <span class="card-title">Spring简介</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -830,11 +828,23 @@
                             </span>
                         <span class="publish-author">
                             
-                            <i class="fas fa-user fa-fw"></i>
-                            Yang
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/%E4%B8%8A%E4%BC%A0Github/" class="post-category">
+                                    上传Github
+                                </a>
+                            
                             
                         </span>
                     </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/GIthub/">
+                        <span class="chip bg-color">GIthub</span>
+                    </a>
+                    
                 </div>
                 
             </div>
@@ -1039,7 +1049,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">2.3k</span>&nbsp;字
+                class="white-color">2.8k</span>&nbsp;字
             
             
             

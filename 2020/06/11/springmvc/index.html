@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="Spring简介, Yang">
+    <meta name="keywords" content="SpringMVC运行流程, Yang">
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>Spring简介 | Yang</title>
+    <title>SpringMVC运行流程 | Yang</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -308,12 +308,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/0.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/11.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">Spring简介</h1>
+                    <h1 class="description center-align post-title">SpringMVC运行流程</h1>
                 </div>
             </div>
         </div>
@@ -430,8 +430,8 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/GIthub/">
-                                <span class="chip bg-color">GIthub</span>
+                            <a href="/tags/SpringMVC/">
+                                <span class="chip bg-color">SpringMVC</span>
                             </a>
                         
                     </div>
@@ -442,8 +442,8 @@
                     <div class="post-cate">
                         <i class="fas fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/categories/%E4%B8%8A%E4%BC%A0Github/" class="post-category">
-                                上传Github
+                            <a href="/categories/SpringMVC/" class="post-category">
+                                SpringMVC
                             </a>
                         
                     </div>
@@ -455,7 +455,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2020-06-09
+                    2020-06-11
                 </div>
                 
 
@@ -464,7 +464,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    690
+                    481
                 </div>
                 
 
@@ -476,28 +476,37 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h3 id="如何将本地的代码上传到Github"><a href="#如何将本地的代码上传到Github" class="headerlink" title="如何将本地的代码上传到Github"></a>如何将本地的代码上传到Github</h3><p>  众所周知Github是全球最大的同性交友网站（代码爱好者的代码托管网站）里面存放了程序员们开源的各种项目代码，掌握好Github的使用是程序员的必备技能 ，也是在校大学生期末项目制作的助攻神器</p>
-<p>  下面我就来简单的介绍如何使用Github</p>
-<p>   首先你需要一个github账号，所有还没有的话先去注册吧！<a href="https://github.com/">https://github.com/</a></p>
-<p>我们使用git需要先安装git工具，这里给出下载地址，下载后一路直接安装即可：</p>
-<p><a href="https://git-for-windows.github.io/" target="_blank" rel="noopener">https://git-for-windows.github.io/</a></p>
-<blockquote>
-<p>有条件的同学可以翻墙进去 毕竟服务器在国外 国内上比较卡</p>
-</blockquote>
-<hr>
-<h5 id="1-进入Github首页，点击New-repository新建一个项目"><a href="#1-进入Github首页，点击New-repository新建一个项目" class="headerlink" title="1.进入Github首页，点击New repository新建一个项目"></a>1.进入Github首页，点击New repository新建一个项目</h5><p><img src="https://imgconvert.csdnimg.cn/aHR0cDovL2ltYWdlczIwMTUuY25ibG9ncy5jb20vYmxvZy85MTM5MTMvMjAxNjA4LzkxMzkxMy0yMDE2MDgyMzE2NDE1NDUyNi00MTg0NDE5OTEucG5n?x-oss-process=image/format,png" alt="enter image description here"></p>
-<h4 id="2-填写相应的信息后点击create"><a href="#2-填写相应的信息后点击create" class="headerlink" title="2.填写相应的信息后点击create"></a>2.填写相应的信息后点击create</h4><p>Repository name: 仓库名称<br>Description(可选): 仓库描述介绍<br>Public, Private : 仓库权限（公开共享，私有或指定合作者）<br>Initialize this repository with a README: 添加一个README.md<br>gitignore: 不需要进行版本管理的仓库类型，对应生成文件.gitignore<br>license: 证书类型，对应生成文件LICENSE</p>
-<p><img src="https://imgconvert.csdnimg.cn/aHR0cDovL2ltYWdlczIwMTUuY25ibG9ncy5jb20vYmxvZy85MTM5MTMvMjAxNjA4LzkxMzkxMy0yMDE2MDgyMzE2NTAyNTM3MC00OTQ0NDUwNi5wbmc?x-oss-process=image/format,png" alt="enter image description here"><br><img src="https://imgconvert.csdnimg.cn/aHR0cDovL2ltYWdlczIwMTUuY25ibG9ncy5jb20vYmxvZy85MTM5MTMvMjAxNjA4LzkxMzkxMy0yMDE2MDgyMzE2NTAyNTM3MC00OTQ0NDUwNi5wbmc?x-oss-process=image/format,png" alt="enter image description here"></p>
-<h4 id="3-点击Clone-or-dowload会出现一个地址，copy这个地址备用"><a href="#3-点击Clone-or-dowload会出现一个地址，copy这个地址备用" class="headerlink" title="3.点击Clone or dowload会出现一个地址，copy这个地址备用"></a>3.点击Clone or dowload会出现一个地址，copy这个地址备用</h4><p><img src="https://imgconvert.csdnimg.cn/aHR0cDovL2ltYWdlczIwMTUuY25ibG9ncy5jb20vYmxvZy85MTM5MTMvMjAxNjA4LzkxMzkxMy0yMDE2MDgyMzE2NTEwNzMwOC00Mzk5MjYwMDYucG5n?x-oss-process=image/format,png" alt="enter image description here"></p>
-<h4 id="4-接下来就到本地操作了，首先右键你的项目，如果你之前安装git成功的话，右键会出现两个新选项，分别为Git-Gui-Here-Git-Bash-Here-这里我们选择Git-Bash-Here，进入如下界面，Test-Bluetooth即为我的项目名。"><a href="#4-接下来就到本地操作了，首先右键你的项目，如果你之前安装git成功的话，右键会出现两个新选项，分别为Git-Gui-Here-Git-Bash-Here-这里我们选择Git-Bash-Here，进入如下界面，Test-Bluetooth即为我的项目名。" class="headerlink" title="4.接下来就到本地操作了，首先右键你的项目，如果你之前安装git成功的话，右键会出现两个新选项，分别为Git Gui Here,Git Bash Here,这里我们选择Git Bash Here，进入如下界面，Test_Bluetooth即为我的项目名。"></a>4.接下来就到本地操作了，首先右键你的项目，如果你之前安装git成功的话，右键会出现两个新选项，分别为Git Gui Here,Git Bash Here,这里我们选择Git Bash Here，进入如下界面，Test_Bluetooth即为我的项目名。</h4><p><img src="https://imgconvert.csdnimg.cn/aHR0cDovL2ltYWdlczIwMTUuY25ibG9ncy5jb20vYmxvZy85MTM5MTMvMjAxNjA4LzkxMzkxMy0yMDE2MDgyMzE3MTA0ODMwOC0xOTQ4OTUyOTkucG5n?x-oss-process=image/format,png" alt="enter image description here"></p>
-<h4 id="5-接下来输入如下代码（关键步骤），把github上面的仓库克隆到本地"><a href="#5-接下来输入如下代码（关键步骤），把github上面的仓库克隆到本地" class="headerlink" title="5..接下来输入如下代码（关键步骤），把github上面的仓库克隆到本地"></a>5..接下来输入如下代码（关键步骤），把github上面的仓库克隆到本地</h4><p>git clone <a href="https://github.com/CKTim/BlueTooth.git（https://github.com/CKTim/BlueTooth.git替换成你之前复制的地址）">https://github.com/CKTim/BlueTooth.git（https://github.com/CKTim/BlueTooth.git替换成你之前复制的地址）</a><br><img src="https://imgconvert.csdnimg.cn/aHR0cDovL2ltYWdlczIwMTUuY25ibG9ncy5jb20vYmxvZy85MTM5MTMvMjAxNjA4LzkxMzkxMy0yMDE2MDgyMzE3MTE0Mzk4MC03NDExNTIwNDIucG5n?x-oss-process=image/format,png" alt="enter image description here"></p>
-<h4 id="6-这个步骤以后你的本地项目文件夹下面就会多出个文件夹，该文件夹名即为你github上面的项目名，如图我多出了个Test文件夹，我们把本地项目文件夹下的所有文件（除了新多出的那个文件夹不用），其余都复制到那个新多出的文件夹下，"><a href="#6-这个步骤以后你的本地项目文件夹下面就会多出个文件夹，该文件夹名即为你github上面的项目名，如图我多出了个Test文件夹，我们把本地项目文件夹下的所有文件（除了新多出的那个文件夹不用），其余都复制到那个新多出的文件夹下，" class="headerlink" title="6.这个步骤以后你的本地项目文件夹下面就会多出个文件夹，该文件夹名即为你github上面的项目名，如图我多出了个Test文件夹，我们把本地项目文件夹下的所有文件（除了新多出的那个文件夹不用），其余都复制到那个新多出的文件夹下，"></a>6.这个步骤以后你的本地项目文件夹下面就会多出个文件夹，该文件夹名即为你github上面的项目名，如图我多出了个Test文件夹，我们把本地项目文件夹下的所有文件（除了新多出的那个文件夹不用），其余都复制到那个新多出的文件夹下，</h4><p><img src="https://imgconvert.csdnimg.cn/aHR0cDovL2ltYWdlczIwMTUuY25ibG9ncy5jb20vYmxvZy85MTM5MTMvMjAxNjA4LzkxMzkxMy0yMDE2MDgyMzE3MTIwOTczMC0yMDg5NDk2NDgzLnBuZw?x-oss-process=image/format,png" alt="enter image description here"></p>
-<h4 id="7-接着输入命令cd-Test，进入Test文件夹"><a href="#7-接着输入命令cd-Test，进入Test文件夹" class="headerlink" title="7.接着输入命令cd Test，进入Test文件夹"></a>7.接着输入命令cd Test，进入Test文件夹</h4><p><img src="https://imgconvert.csdnimg.cn/aHR0cDovL2ltYWdlczIwMTUuY25ibG9ncy5jb20vYmxvZy85MTM5MTMvMjAxNjA4LzkxMzkxMy0yMDE2MDgyMzE3MTQ1NDI2MS0xMDM2Mzc3Ny5wbmc?x-oss-process=image/format,png" alt="enter image description here"></p>
-<h4 id="8-接下来依次输入以下代码即可完成其他剩余操作："><a href="#8-接下来依次输入以下代码即可完成其他剩余操作：" class="headerlink" title="8.接下来依次输入以下代码即可完成其他剩余操作："></a>8.接下来依次输入以下代码即可完成其他剩余操作：</h4><p>git add .        （注：别忘记后面的.，此操作是把Test文件夹下面的文件都添加进来）</p>
-<p>git commit  -m  “提交信息”  （注：“提交信息”里面换成你需要，如“first commit”）</p>
-<p>git push -u origin master   （注：此操作目的是把本地仓库push到github上面，此步骤需要你输入帐号和密码）</p>
-<p><img src="https://imgconvert.csdnimg.cn/aHR0cDovL2ltYWdlczIwMTUuY25ibG9ncy5jb20vYmxvZy85MTM5MTMvMjAxNjA4LzkxMzkxMy0yMDE2MDgyMzE3MTU1NzgyMy0zODYzNTEyLnBuZw?x-oss-process=image/format,png" alt="enter image description here"><br><img src="https://imgconvert.csdnimg.cn/aHR0cDovL2ltYWdlczIwMTUuY25ibG9ncy5jb20vYmxvZy85MTM5MTMvMjAxNjA4LzkxMzkxMy0yMDE2MDgyMzE3MTY1MTgwOC0xMjI1MzM1MTM2LnBuZw?x-oss-process=image/format,png" alt="enter image description here"><br><img src="https://imgconvert.csdnimg.cn/aHR0cDovL2ltYWdlczIwMTUuY25ibG9ncy5jb20vYmxvZy85MTM5MTMvMjAxNjA4LzkxMzkxMy0yMDE2MDgyMzE3MTgxODkzMy0xNTA2ODE1NTY2LnBuZw?x-oss-process=image/format,png" alt="enter image description here"></p>
-<h4 id="9-最后去自己的Github网页刷新一下就能看见这自己刚刚上传的代码了"><a href="#9-最后去自己的Github网页刷新一下就能看见这自己刚刚上传的代码了" class="headerlink" title="9.最后去自己的Github网页刷新一下就能看见这自己刚刚上传的代码了"></a>9.最后去自己的Github网页刷新一下就能看见这自己刚刚上传的代码了</h4><hr>
+                <h3 id="1-SpringMVC的运行流程"><a href="#1-SpringMVC的运行流程" class="headerlink" title="1. SpringMVC的运行流程"></a>1. SpringMVC的运行流程</h3><p><img src="https://imgconvert.csdnimg.cn/aHR0cHM6Ly9tbWJpei5xcGljLmNuL21tYml6X3BuZy9RQ3U4NDlZVGFJTzZqaWI4WFAzcjhoOHNpYjA4MGljaWJIdnVYZjZOODFvYVdSQlRKTjN0WUVIQlBpYjhlSENHTzZNbWx2a25TdWliRW1sUk90ejRJY2ZyeFg5dy82NDA?x-oss-process=image/format,png" alt="enter image description here"> </p>
+<ol>
+<li>用户向服务器发送请求，请求被Spring 前端控制Servelt DispatcherServlet捕获；</li>
+</ol>
+<ol start="2">
+<li>DispatcherServlet对请求URL进行解析，得到请求资源标识符（URI）。然后根据该URI，调用HandlerMapping获得该Handler配置的所有相关的对象（包括Handler对象以及Handler对象对应的拦截器），最后以HandlerExecutionChain对象的形式返回；</li>
+</ol>
+<ol start="3">
+<li>DispatcherServlet 根据获得的Handler，选择一个合适的HandlerAdapter；（附注：如果成功获得HandlerAdapter后，此时将开始执行拦截器的preHandler(…)方法）</li>
+</ol>
+<ol start="4">
+<li>提取Request中的模型数据，填充Handler入参，开始执行Handler（Controller)。 在填充Handler的入参过程中，根据你的配置，Spring将帮你做一些额外的工作：</li>
+</ol>
+<p>   ① HttpMessageConveter： 将请求消息（如Json、xml等数据）转换成一个对象，将对象转换为指定的响应信息<br>   ② 数据转换：对请求消息进行数据转换。如String转换成Integer、Double等<br>   ③ 数据根式化：对请求消息进行数据格式化。 如将字符串转换成格式化数字或格式化日期等<br>   ④ 数据验证： 验证数据的有效性（长度、格式等），验证结果存储到BindingResult或Error中<br>5.  Handler执行完成后，向DispatcherServlet 返回一个ModelAndView对象；</p>
+<ol start="6">
+<li>根据返回的ModelAndView，选择一个适合的ViewResolver（必须是已经注册到Spring容器中的ViewResolver)返回给DispatcherServlet ；</li>
+</ol>
+<ol start="7">
+<li>ViewResolver 结合Model和View，来渲染视图；</li>
+</ol>
+<ol start="8">
+<li>将渲染结果返回给客户端。</li>
+</ol>
+<h3 id="2-springMVC的核心组件"><a href="#2-springMVC的核心组件" class="headerlink" title="2. springMVC的核心组件"></a>2. springMVC的核心组件</h3><ol>
+<li>DispatcherServlet：中央控制器，把请求给转发到具体的控制类</li>
+<li>Controller：具体处理请求的控制器</li>
+<li>HandlerMapping：映射处理器，负责映射中央处理器转发给controller时的映射策略</li>
+<li>ModelAndView：服务层返回的数据和视图层的封装类</li>
+<li>ViewResolver：视图解析器，解析具体的视图</li>
+<li>Interceptors ：拦截器，负责拦截我们定义的请求然后做处理工作</li>
+</ol>
 
             </div>
             <hr/>
@@ -523,7 +532,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://github.com/yyx-hub/yyx-hub.github.io/2020/06/09/firstblog/">https://github.com/yyx-hub/yyx-hub.github.io/2020/06/09/firstblog/</a>
+                    <a href="https://github.com/yyx-hub/yyx-hub.github.io/2020/06/11/springmvc/">https://github.com/yyx-hub/yyx-hub.github.io/2020/06/11/springmvc/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -561,8 +570,8 @@
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/GIthub/">
-                                    <span class="chip bg-color">GIthub</span>
+                                <a href="/tags/SpringMVC/">
+                                    <span class="chip bg-color">SpringMVC</span>
                                 </a>
                             
                         </div>
@@ -730,9 +739,65 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
+            <div class="card">
+                <a href="/2020/06/11/springmvc/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/11.jpg" class="responsive-img" alt="SpringMVC运行流程">
+                        
+                        <span class="card-title">SpringMVC运行流程</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            1. SpringMVC的运行流程 
+
+用户向服务器发送请求，请求被Spring 前端控制Servelt DispatcherServlet捕获；
+
+
+DispatcherServlet对请求URL进行解析，得到请求资源标识符（URI）。然
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-06-11
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/SpringMVC/" class="post-category">
+                                    SpringMVC
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/SpringMVC/">
+                        <span class="chip bg-color">SpringMVC</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
             <div class="card">
                 <a href="/2020/06/11/spring/">
                     <div class="card-image">
@@ -755,9 +820,9 @@
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2020-06-11
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-06-11
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
@@ -777,43 +842,6 @@
                         <span class="chip bg-color">Spring</span>
                     </a>
                     
-                </div>
-                
-            </div>
-        </div>
-        
-        
-        <div class="article col s12 m6" data-aos="fade-up">
-            <div class="article-badge right-badge text-color">
-                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
-            </div>
-            <div class="card">
-                <a href="/2020/06/09/hello-world/">
-                    <div class="card-image">
-                        
-                        
-                        <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="Hello World">
-                        
-                        <span class="card-title">Hello World</span>
-                    </div>
-                </a>
-                <div class="card-content article-content">
-                    <div class="summary block-with-text">
-                        
-                            Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hex
-                        
-                    </div>
-                    <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-06-09
-                            </span>
-                        <span class="publish-author">
-                            
-                            <i class="fas fa-user fa-fw"></i>
-                            Yang
-                            
-                        </span>
-                    </div>
                 </div>
                 
             </div>
